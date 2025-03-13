@@ -20,7 +20,7 @@ export default function WorkoutDiary() {
       const uniqueSports = [...new Set(storedWorkouts.map(workout => workout.sport))];
       setSports(uniqueSports);
     } catch (error) {
-      console.error("Fehler beim Laden der Sportarten:", error);
+      console.error("Loading Error:", error);
     }
   };
 
